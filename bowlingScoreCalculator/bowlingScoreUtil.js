@@ -3,12 +3,6 @@ let frameStart = true;
 let currentScore = 0;
 let length = 20;
 
-function roll(pins) {
-    let tempArray = Array.from(rolls)
-    tempArray.push(pins)
-}
-
-
 function score(rolls, frameStart, currentScore, length) {
     const strike = 10
     const spare = 10
