@@ -1,11 +1,12 @@
-let rolls = [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let frameStart = true;
-let currentScore = 0;
-let length = 20;
+//let rolls = [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-function score(rolls, frameStart, currentScore, length) {
-    const strike = 10
-    const spare = 10
+
+const currentScore = rolls => {
+    const strike = 10;
+    const spare = 10;
+    let frameStart = true;
+    let currentScore = 0;
+    let length = 20;
 
     for (let roll = 0; roll < length; roll++) {
         if (frameStart == true) {
@@ -26,10 +27,12 @@ function score(rolls, frameStart, currentScore, length) {
                 currentScore += rolls[roll]
             }
             frameStart = true;
-        } 
-    } 
+        }
+    }
     return currentScore;
 }
 
 
-console.log(score(rolls, frameStart, currentScore, length));
+//console.log(currentScore(rolls));
+
+module.export = { currentScore };
