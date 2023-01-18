@@ -35,6 +35,10 @@ describe("Bowling Game Utilities", () =>
     it('should return score when input consist of strike frames', () => {
       const result = currentScore([1, 2, 3, 4, 5, 4, 5, 5, 3, 3, 2, 3, 4, 5, 10, 3, 3, 3, 2]);
       expect(result).toEqual(79);
+    }),
+    it('should return score when input consist of strike frames', () => {
+      const result = currentScore([1, 1, 2, 3, 4, 5, 4, 5, 5, 3, 3, 2, 3, 4, 5, 5, 3, 7, 10, 10, 4]);
+      expect(result).toEqual(102);
     });
   })
 );
