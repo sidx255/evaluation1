@@ -28,7 +28,7 @@ const currentScore = rolls => {
             frameStart = true;
         }
     }
-    if (isNan.currentScore) throw new error 
+    //if (isNan.currentScore) throw new error ("Frames are not 10"); 
     return currentScore;
 }
 
